@@ -94,6 +94,20 @@ This dataset is suitable for:
 - **Machine learning** applications in process industries
 - **Benchmarking** of various process analytics methods
 
+## Python loading
+
+```python
+import pandas as pd
+
+# Load Mode 1, Fault 10, Batch 1 simulation data
+url = "https://github.com/mv-per/tennessee-eastman-dataset/raw/main/simulations/mode_1/faults/mode1_10_1.xlsx"
+df = pd.read_excel(url)
+
+# Display the first few rows
+print(df.head())
+```
+
+
 ## Citation
 
 If you use this dataset in your research, please cite the original Tennessee Eastman Challenge Process papers and any relevant publications associated with this specific dataset.
