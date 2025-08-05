@@ -45,8 +45,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2002-11-22T16:46:09Z</dcterms:created>
   <dc:creator>ricker</dc:creator>
   <cp:lastModifiedBy>mavpe</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-07-31T13:01:01Z</dcterms:modified>
-  <cp:revision>21.9</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-08-05T21:15:11Z</dcterms:modified>
+  <cp:revision>21.10</cp:revision>
   <cp:version>R2024b</cp:version>
 </cp:coreProperties>
 
@@ -120,7 +120,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:21.9&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:21.10&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -4354,7 +4354,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="Open">on</P>
   <P Name="ZoomFactor">80</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">261</P>
+  <P Name="SIDHighWatermark">264</P>
   <Block BlockType="Scope" Name="$ per hr" SID="1">
     <PortCounts in="1"/>
     <P Name="Position">[705, 234, 735, 266]</P>
@@ -4374,9 +4374,9 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Value">10</P>
   </Block>
   <Block BlockType="Constant" Name="Disturbances" SID="3">
-    <P Name="Position">[90, 518, 140, 542]</P>
+    <P Name="Position">[65, 518, 115, 542]</P>
     <P Name="ZOrder">-3</P>
-    <P Name="Value">[1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 zeros(1,6)]</P>
+    <P Name="Value">dist</P>
     <P Name="SampleTime">Inf</P>
   </Block>
   <Block BlockType="SubSystem" Name="HourlyCost" SID="4">
@@ -4633,12 +4633,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Dst">31#in:6</P>
   </Line>
   <Line>
-    <P Name="ZOrder">26</P>
-    <P Name="Src">3#out:1</P>
-    <P Name="Points">[21, 0; 0, 20]</P>
-    <P Name="Dst">250#in:1</P>
-  </Line>
-  <Line>
     <P Name="ZOrder">27</P>
     <P Name="Src">249#out:1</P>
     <P Name="Points">[25, 0; 0, -15]</P>
@@ -4654,6 +4648,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Src">250#out:1</P>
     <P Name="Points">[20, 0; 0, -30]</P>
     <P Name="Dst">31#in:13</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">39</P>
+    <P Name="Src">3#out:1</P>
+    <P Name="Points">[33, 0; 0, 20]</P>
+    <P Name="Dst">250#in:1</P>
   </Line>
 </System>
 
@@ -4682,9 +4682,9 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1875.0, 861.0]</P>
-          <P Name="ZoomFactor" Class="double">0.79999999999999982</P>
-          <P Name="Offset" Class="double">[-136.85221563124583, 29.599999999999966]</P>
-          <P Name="SceneRectInView" Class="double">[-136.85221563124583, 29.599999999999966, 1875.0000000000005, 861.00000000000023]</P>
+          <P Name="ZoomFactor" Class="double">0.79999999999999971</P>
+          <P Name="Offset" Class="double">[-136.85221563124594, 29.599999999999966]</P>
+          <P Name="SceneRectInView" Class="double">[-136.85221563124594, 29.599999999999966, 1875.0000000000007, 861.00000000000034]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -4703,8 +4703,8 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="LoadSaveID" Class="char">31</P>
           <P Name="Extents" Class="double">[1875.0, 861.0]</P>
           <P Name="ZoomFactor" Class="double">0.8</P>
-          <P Name="Offset" Class="double">[-341.40000000000043, 270.17920403877957]</P>
-          <P Name="SceneRectInView" Class="double">[-341.40000000000043, 270.17920403877957, 1875.0, 861.0]</P>
+          <P Name="Offset" Class="double">[-916.75968678246, 224.87548445847472]</P>
+          <P Name="SceneRectInView" Class="double">[-916.75968678246, 224.87548445847472, 1875.0, 861.0]</P>
         </Object>
         <Object ObjectID="8">
           <P Name="IsActive" Class="logical">0</P>
